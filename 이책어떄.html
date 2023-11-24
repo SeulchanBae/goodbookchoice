@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이책어떄</title>
+    <style>
+      @font-face {
+          font-family: 'JalnanGothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+           font-family: 'yg-jalnan';
+         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+      }
+
+  
+        body {
+            font-family: 'yg-jalnan';
+        }
+
+        header { 
+            background-color: #E51A47;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #e9ecef;
+        }
+
+        nav ul li {
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #495057;
+        }
+
+        nav u2 {
+            text-align: right;
+            padding: 10px;
+        }
+
+        section h2 {
+            color: #212529;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        header h1 {
+            font-family: 'JalnanGothic';
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>이책어떄</h1>
+    </header>
+    
+    <nav>
+
+        <ul>
+            <li><a href="#">메인화면</a></li>
+            <li><a href="#">내가 읽은 책 목록</a></li>
+            <li><a href="#">책 리뷰 적기</a></li>
+            <li><a href="#">책 추천 리스트</a></li>
+        </ul>
+    
+        <u2>
+        <!-- 회원가입 폼 -->
+        <form action="signup_process.php" method="post">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+    
+          <input type="submit" value="Sign Up">
+        </form>
+    
+          <!-- 로그인 폼 -->
+        <form action="login_process.php" method="post">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+    
+          <input type="submit" value="Log In">
+        </form>
+        </u2>
+      </nav>
+    <section>
+        <h2>내가 읽은 책 목록</h2>
+        <!-- 내가 읽은 책의 목록을 보여줄 수 있습니다. -->
+
+        <h2>리뷰 적기</h2>
+        <!-- 여기에 리뷰 작성 폼을 추가할 수 있습니다. -->
+
+        <h2>이번주 추천 도서</h2>
+        <!-- 여기에 추천 도서 목록을 보여줄 수 있습니다. -->
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
