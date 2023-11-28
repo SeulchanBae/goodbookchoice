@@ -1,2 +1,2 @@
 # goodbookchoice
-TESTTSET
+리눅스 과제 
