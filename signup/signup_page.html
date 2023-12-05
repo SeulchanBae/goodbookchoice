@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>회원가입</title>
+  <style>
+    @font-face {
+        font-family: 'JalnanGothic';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+         font-family: 'yg-jalnan';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+    }
+
+
+      body {
+          font-family: 'yg-jalnan';
+      }
+
+      header { 
+          background-color: #E51A47;
+          text-align: center;
+          padding: 10px;
+          color: white;
+      }
+
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+          display: flex;
+          justify-content: space-around;
+          background-color: #e9ecef;
+      }
+
+      nav ul li {
+          padding: 15px;
+          margin: 10px;
+          border: 1px solid #ced4da;
+          border-radius: 5px;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: #495057;
+      }
+
+      nav u2 {
+          text-align: right;
+          padding: 10px;
+      }
+
+      section h2 {
+          color: #212529;
+      }
+
+      footer {
+          background-color: #f8f9fa;
+          text-align: center;
+          padding: 10px;
+          position: fixed;
+          width: 100%;
+          bottom: 0;
+      }
+
+      header h1 {
+          font-family: 'JalnanGothic';
+      }
+  </style>
+</head>
+
+<body>
+    <header>
+      <h1>회원가입</h1>
+    </header>
+    
+    <nav>
+        <u2>
+        <!-- 회원가입 폼 -->
+        <form action="signup_page.html" method="post" style="text-align: center; font-family: 'yg-jalnan';">
+          <label for="userID" style="color: #212529;">User ID:</label><br>
+          <input type="text" id="userID" name="userID"><br>
+    
+          <label for="password" style="color: #212529;">Password:</label><br>
+          <input type="password" id="password" name="password"><br>
+    
+          <label for="name" style="color: #212529;">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          
+          <label for="email" style="color: #212529;">Email:</label><br>
+          <input type="text" id="email" name="email"><br>
+    
+          <input type="submit" value="Sign Up">
+        </form>
+    
+    
+        </u2>
+      </nav>
+    <section>
+        <!-- 생략 -->
+    </section>
+
+    <footer>
+        <!-- 생략 -->
+    </footer>
+</body>
+</html>
